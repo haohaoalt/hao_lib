@@ -1,7 +1,7 @@
 <!--
  * @Author: zhanghao
  * @Date: 2022-08-30 21:02:27
- * @LastEditTime: 2022-08-30 22:01:46
+ * @LastEditTime: 2022-09-14 23:27:22
  * @FilePath: /hao_lib/README.md
  * @Description: 安装各种库的集合
 -->
@@ -31,6 +31,17 @@ cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/home/hao007/haolib/op
 ```
 
 ```
+make
+sudo make install
+```
+## 02 Panglin
+```
+git clone https://github.com/stevenlovegrove/Pangolin.git
+sudo apt install libglew-dev
+cd Pangolin
+mkdir build
+cd build
+cmake ..
 make
 sudo make install
 ```
