@@ -1,7 +1,7 @@
 <!--
  * @Author: zhanghao
  * @Date: 2022-08-30 21:02:27
- * @LastEditTime: 2022-09-14 23:27:22
+ * @LastEditTime: 2022-09-14 23:41:50
  * @FilePath: /hao_lib/README.md
  * @Description: 安装各种库的集合
 -->
@@ -44,4 +44,5 @@ cd build
 cmake ..
 make
 sudo make install
+sudo ldconfig
 ```
