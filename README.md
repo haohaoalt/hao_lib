@@ -1,7 +1,7 @@
 <!--
  * @Author: zhanghao
  * @Date: 2022-08-30 21:02:27
- * @LastEditTime: 2022-09-14 23:41:50
+ * @LastEditTime: 2022-09-15 21:54:34
  * @FilePath: /hao_lib/README.md
  * @Description: 安装各种库的集合
 -->
@@ -45,4 +45,29 @@ cmake ..
 make
 sudo make install
 sudo ldconfig
+```
+
+## 03 Sophus
+
+`fmt`
+fmt库的安装
+```
+git clone  https://github.com/fmtlib/fmt.git # 注意要使用8或者7版本的，9的会报错，git checkout 7.1.3
+git checkout -b 8.1.1
+cd fmt
+mkdir build
+cd build 
+cmake ..
+make
+sudo make install
+```
+Sophus李代数库的安装
+```
+git clone http://github.com/strasdat/Sophus.git
+cd Sophus
+mkdir build
+cd build 
+cmake ..
+make
+sudo make install
 ```
