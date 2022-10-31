@@ -1,7 +1,7 @@
 <!--
  * @Author: zhanghao
  * @Date: 2022-08-30 21:02:27
- * @LastEditTime: 2022-09-15 21:54:34
+ * @LastEditTime: 2022-09-20 16:51:17
  * @FilePath: /hao_lib/README.md
  * @Description: 安装各种库的集合
 -->
@@ -70,4 +70,16 @@ cd build
 cmake ..
 make
 sudo make install
+```
+
+## 04 G2O
+```
+sudo apt-get install cmake libeigen3-dev libsuitesparse-dev qtdeclarative5-dev qt5-qmake libqglviewer-dev-qt5
+git clone https://github.com/RainerKuemmerle/g2o.git
+cd g2o
+mkdir build
+cd build
+cmake ..
+make
+suao make install
 ```
