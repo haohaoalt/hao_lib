@@ -1,7 +1,7 @@
 <!--
  * @Author: zhanghao
  * @Date: 2022-08-30 21:02:27
- * @LastEditTime: 2022-09-20 16:51:17
+ * @LastEditTime: 2022-12-02 23:13:03
  * @FilePath: /hao_lib/README.md
  * @Description: 安装各种库的集合
 -->
@@ -47,6 +47,14 @@ sudo make install
 sudo ldconfig
 ```
 
+Pangolin_example
+
+<img src="README.assets/image-20221202231335963.png" alt="image-20221202231335963" style="zoom:50%;" />
+
+
+
+
+
 ## 03 Sophus
 
 `fmt`
@@ -83,3 +91,32 @@ cmake ..
 make
 suao make install
 ```
+
+
+
+
+
+
+安装依赖项
+```
+sudo apt-get install libglew-dev
+sudo apt-get install libboost-dev libboost-thread-dev libboost-filesystem-dev
+sudo apt-get install libpython2.7-dev
+```
+安装Pangolin
+
+```
+ git clone https://github.com/stevenlovegrove/Pangolin.git
+ cd Pangolin
+ mkdir build 
+ cd build 
+ cmake -DCPP11_NO_BOOSR=1 .. 
+ make -j4
+```
+
+安装eigen3
+
+```
+sudo apt-get install libeigen3-dev
+```
+
