@@ -1,10 +1,3 @@
-/*
- * @Author: zhanghao
- * @Date: 2022-12-02 15:48:04
- * @LastEditTime: 2022-12-02 16:14:50
- * @FilePath: /hao_lib/Pangolin_example/test.cpp
- * @Description: 
- */
 #include <pangolin/pangolin.h>
 
 int main(int /*argc*/, char ** /*argv*/)

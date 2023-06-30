@@ -1,26 +1,18 @@
-<!--
- * @Author: zhanghao
- * @Date: 2022-08-30 21:02:27
-<<<<<<< HEAD
- * @LastEditTime: 2022-12-18 21:34:47
-=======
- * @LastEditTime: 2022-12-02 23:13:03
->>>>>>> 8df96319a45b689d0a43c3a057ca13ed131259a8
- * @FilePath: /hao_lib/README.md
- * @Description: 安装各种库的集合
--->
 # hao_lib
 自己安装各种库的集合
 # 01 opencv
 ```
+mkdir opencv4.6
+cd opencv4.6
 git clone https://github.com/opencv/opencv.git
 git clone https://github.com/opencv/opencv_contrib.git
+mkdir install
 ```
 ```
 cd opencv
-git checkout -b 4.6.0
+git checkout 4.6.0
 cd opencv_contrib
-git checkout -b 4.6.0  
+git checkout 4.6.0  
 ```
 ```
 sudo apt install build-essential cmake git pkg-config libgtk-3-dev \
