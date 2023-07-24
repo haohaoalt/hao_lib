@@ -23,7 +23,10 @@ sudo apt install build-essential cmake git pkg-config libgtk-3-dev \
     libgstreamer-plugins-base1.0-dev libgstreamer1.0-dev
 ```
 ```
-cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/home/hao007/haolib/opencv4.6/install -D OPENCV_EXTRA_MODULES_PATH=/home/hao007/haolib/opencv4.6/opencv_contrib/modules ~/haolib/opencv4.6/opencv ..
+cd opencv
+mkdir build
+cd build
+cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/home/slam007/app/opencv3.4.5/install/ -D OPENCV_EXTRA_MODULES_PATH=/home/slam007/app/opencv3.4.5/opencv_contrib/modules/ -DOPENCV_ENABLE_NONFREE:BOOL=TRUE ..
 ```
 
 ```
