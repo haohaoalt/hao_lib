@@ -9,4 +9,7 @@ link_directories(${PCL_LIBRARY_DIRS})
 add_definitions(${PCL_DEFINITIONS})
 
 add_executable(pcl_demo kd_tree_demo.cpp)
+add_executable(oct_demo oct_demo.cpp)
 target_link_libraries(pcl_demo ${PCL_LIBRARIES})
+target_link_libraries(oct_demo ${PCL_LIBRARIES})
+
