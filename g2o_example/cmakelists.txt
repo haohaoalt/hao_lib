@@ -1,0 +1,41 @@
+cmake_minimum_required(VERSION 2.6)
+project(g2o_test)
+
+set(CMAKE_CXX_FLAGS "-std=c++11 -O3" )
+
+# 添加cmake模块以使用ceres库
+list( APPEND CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake_modules )
+
+# 寻找G2O
+include_directories( 
+    ${G2O_INCLUDE_DIRS}
+    "/usr/include/eigen3"
+    "/usr/include/suitesparse"
+)
+# find g2o lib
+find_package(G2O REQUIRED)
+IF(G2O_FOUND)
+    include_directories(${G2O_INCLUDE_DIR})
+    message("G2O lib is found:"${G2O_INCLUDE_DIR})
+ENDIF(G2O_FOUND)
+
+
+# OpenCV
+find_package( OpenCV REQUIRED )
+include_directories( ${OpenCV_DIRS} )
+
+add_executable(g2o_test main.cpp)
+
+# 与G2O和OpenCV链接
+target_link_libraries( g2o_test 
+    ${OpenCV_LIBS}
+    g2o_core g2o_stuff
+)
+
+install(TARGETS g2o_test RUNTIME DESTINATION bin)
+
+ADD_EXECUTABLE(simple_optimize simple_optimize.cpp)
+target_link_libraries(simple_optimize ${G2O_LIBS})
+
+# ADD_EXECUTABLE(opti-pose opti-pose.cpp)
+# target_link_libraries(opti-pose ${G2O_LIBS})

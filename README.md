@@ -120,3 +120,7 @@ sudo apt-get install libeigen3-dev
 ```
 
 ## 05 PCL
+
+
+## g2o
+dataset from https://github.com/OpenSLAM-org/openslam_vertigo/tree/master
